@@ -11,7 +11,7 @@ class Posts extends Equatable {
   final String? title;
   final String? body;
 
-  Posts({this.postId, this.title, this.body});
+  Posts({required this.postId,required this.title,required this.body});
 
   @override
   List<Object?> get props => [postId, title, body];
